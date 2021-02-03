@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="icon.png" type="image" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    <style>
+      div#imageContainer {
+        background: white;
+        height: 100vh;
+        vertical-align: bottom;
+        display: table-cell;
+      }
+
+      #imageContainer img {
+        vertical-align: bottom;
+        width: 100%;
+      }
+    </style>
     <title>DerPhsar Mobile</title>
   </head>
   <body>
-    <img src="abc-01.jpg" class="img-fluid" />
+    <div id="randomContainer">
+      <div id="imageContainer">
+        <img src="abc-01.jpg  " alt="" />
+      </div>
+    </div>
   </body>
 </html>
