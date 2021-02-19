@@ -3,26 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" href="icon.png" type="image" />
     <style>
-      div#imageContainer {
-        background: white;
-        height: 100vh;
-        vertical-align: bottom;
-        display: table-cell;
+      @media only screen and (max-device-width: 1300px) and (min-device-width: 300px) {
+        .img-responsive {
+          height: 40%;
+          width: 40%;
+        }
+        .store-responsive {
+          height: 40%;
+          width: 40%;
+        }
+        body {
+          background-image: url("mobile.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
       }
 
-      #imageContainer img {
-        vertical-align: bottom;
-        width: 100%;
+      @media only screen and (min-device-width: 1301px) {
+        body {
+          background-image: url("newBck.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        .img-responsive {
+          height: 15%;
+          width: 15%;
+        }
+        .store-responsive {
+          height: 15%;
+          width: 15%;
+        }
       }
     </style>
     <title>DerPhsar Mobile</title>
   </head>
   <body>
-    <div id="randomContainer">
-      <div id="imageContainer">
-        <img src="abc-01.jpg  " alt="" />
+    <div
+      class="d-flex flex-column min-vh-100 justify-content-center align-items-center"
+    >
+      <img src="icon.png" class="img-responsive mb-3" alt="" />
+      <div class="row align-items-center text-center">
+        <div class="col-12">
+          <a
+            href="https://apps.apple.com/kh/app/derphsar/id1553336230"
+            target="_blank"
+          >
+            <img src="adasda.png" class="store-responsive" alt="" />
+          </a>
+        </div>
+        <div class="col-12 mt-2">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.derphsarmobile"
+            target="_blank"
+          >
+            <img src="dasdasd.png" class="store-responsive" alt="" />
+          </a>
+        </div>
       </div>
     </div>
   </body>
